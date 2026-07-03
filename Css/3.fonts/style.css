@@ -1,0 +1,17 @@
+h1{
+    font-family: Verdana, arial;
+}
+
+p{
+    font-family: "lucida console", "courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*
+@font-face{
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+*/
