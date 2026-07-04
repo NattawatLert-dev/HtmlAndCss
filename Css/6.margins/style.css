@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+}
+.Box{
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+}
+
+#Box1{
+    margin-left: 100px;
+    background-color: red;
+}
+
+#Box2{
+    background-color: rgb(70, 129, 247);
+    margin: 50px;
+    margin-top: 0px;
+}
+
+/* margin: auto (คือให้ browser คำนวณ margin ให้เองอัตโนมัติ โดยใช้บ่อยสุดกับการ จัด element ให้อยุ่กึ่งกลาง) 
+*/
