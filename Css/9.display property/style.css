@@ -1,0 +1,46 @@
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: block;
+    visibility: hidden;
+}
+
+span{
+    background-color: rgb(63, 152, 255);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/*
+display: block;        แสดงเป็น Block Element
+                        - ขึ้นบรรทัดใหม่เสมอ
+                        - กินพื้นที่ความกว้างเต็มแถว
+                        - กำหนด width, height, margin, padding ได้
+                        
+display: inline;       แสดงเป็น Inline Element
+                        - ไม่ขึ้นบรรทัดใหม่
+                        - กว้างเท่าที่เนื้อหาต้องการ
+                        - width และ height ไม่มีผล
+
+display: inline-block;  ผสมระหว่าง inline และ block
+                          - ไม่ขึ้นบรรทัดใหม่
+                          - กำหนด width และ height ได้
+                          - เหมาะกับปุ่มหรือกล่องเล็ก ๆ 
+
+display: none;          ซ่อน Element ออกจากหน้าเว็บ
+                          - ไม่แสดงผล
+                          - ไม่กินพื้นที่บนหน้าเว็บ
+                          - เหมือน Element ไม่มีอยู่ 
+
+display: flex;          ใช้จัด Layout แบบ 1 มิติ (แถวหรือคอลัมน์)
+                          - จัดเรียงลูก (children) ได้ง่าย
+                          - จัดกึ่งกลาง เว้นระยะ เรียงแนวนอน/แนวตั้ง
+                          - นิยมใช้ทำ Navbar, Card, Menu 
+
+display: grid;            ใช้จัด Layout แบบ 2 มิติ (แถว + คอลัมน์)
+                          - สร้างตารางได้ง่าย
+                          - ควบคุมตำแหน่งทั้งแนวนอนและแนวตั้ง
+                          - เหมาะกับ Dashboard, Gallery, Layout หน้าเว็บ                         
+*/
