@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: brown;
+    height: 100vh;
+}
+
+.Box{
+    background-color: aliceblue;
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    max-height: 50%;
+
+}
+
+/*
+width: 200px;
+padding: 20px;
+border: 5px solid;
+
+ถ้าใช้ค่าเริ่มต้น (content-box)
+ขนาดจริงจะกลายเป็น:
+
+width เนื้อหา = 200px
+padding ซ้าย+ขวา = 40px
+border ซ้าย+ขวา = 10px
+
+รวมทั้งหมด = 250px
+
+แต่ถ้าใช้: box-sizing: border-box;
+
+ขนาด 200px จะ รวม padding และ border เข้าไปแล้ว
+
+ดังนั้น element จะกว้างจริงแค่ 200px พอดี
+*/
