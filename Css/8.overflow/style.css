@@ -1,0 +1,11 @@
+div{
+    border: 2px solid;
+    height: 75px;
+    overflow: clip;
+    overflow-clip-margin: 20px;
+}
+
+/*
+overflow-clip-margin คือ CSS Property ที่ใช้กำหนดว่า เมื่อใช้ overflow: clip แล้ว 
+                     จะให้พื้นที่สำหรับการ "ตัด (clip)" ขยายออกจากขอบของ element ได้มากแค่ไหน
+*/
