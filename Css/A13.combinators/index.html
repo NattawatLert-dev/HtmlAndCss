@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+    combinators = ใช้เพื่ออธิบายความสัมพันธ์
+                  ระหว่าง CSS Selectors ที่ระบุ
+
+        (เว้นวรรค) = descendant
+                     เลือก "ลูกหลานทั้งหมด" ที่อยู่ภายใน
+
+        > = child
+            เลือก "ลูกโดยตรง" เท่านั้น
+
+        ~ = general sibling
+            เลือก "พี่น้องทั้งหมด" ที่อยู่หลัง element นั้น
+            และมี parent เดียวกัน
+
+        + = adjacent sibling
+            เลือก "พี่น้องที่อยู่ติดกัน" เพียงตัวเดียว
+            ที่อยู่ถัดจาก element นั้นทันที
+
+        dev > p
+    -->
+
+    <div id="container">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+        </div>
+    </div>
+
+
+    <p>This is #4</p>
+    <p>This is #5</p>
+
+    
+</body>
+</html>
