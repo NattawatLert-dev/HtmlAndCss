@@ -1,0 +1,38 @@
+a:link{
+    color: rgb(87, 165, 242);
+}
+
+a:hover{
+    color: blueviolet;
+    font-size: 1.1em;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited{
+    color: aliceblue;
+}
+
+li:hover{
+    background-color: yellow;
+}
+
+li:not(:hover){
+    background-color: aliceblue;
+}
+
+li:nth-child(2n){
+    background-color: coral;
+}
+
+#greeting p{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p{
+    display: block;
+}

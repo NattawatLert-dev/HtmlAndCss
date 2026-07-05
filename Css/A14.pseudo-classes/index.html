@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    Pseudo Classes (:)
+
+    :link          = เลือกลิงก์ที่ยังไม่เคยถูกคลิก
+    :visited       = เลือกลิงก์ที่เคยถูกคลิกแล้ว
+    :hover         = เมื่อเมาส์ชี้อยู่บน Element
+    :active        = ขณะกำลังกดคลิก Element
+    :focus         = เมื่อ Element ได้รับโฟกัส (เช่น input)
+    :focus-visible = แสดงโฟกัสเมื่อเหมาะสม (เช่น กด Tab)
+    :checked       = เลือก checkbox หรือ radio ที่ถูกเลือก
+    :disabled      = เลือก Element ที่ถูกปิดการใช้งาน
+    :enabled       = เลือก Element ที่ใช้งานได้
+    :required      = เลือก input ที่ต้องกรอก
+    :optional      = เลือก input ที่ไม่บังคับกรอก
+    :valid         = เลือก input ที่ข้อมูลถูกต้อง
+    :invalid       = เลือก input ที่ข้อมูลไม่ถูกต้อง
+    :empty         = เลือก Element ที่ไม่มีเนื้อหาภายใน
+    :root          = เลือก Element รากของเอกสาร (<html>)
+
+    Child Pseudo Classes
+
+    :first-child   = ลูกคนแรกของ Parent
+    :last-child    = ลูกคนสุดท้ายของ Parent
+    :only-child    = เป็นลูกเพียงคนเดียวของ Parent
+    :nth-child(n)  = เลือกลูกลำดับที่ n
+    :nth-last-child(n) = นับจากลูกคนสุดท้าย
+    :first-of-type = Element ตัวแรกของชนิดเดียวกัน
+    :last-of-type  = Element ตัวสุดท้ายของชนิดเดียวกัน
+    :only-of-type  = มีเพียงตัวเดียวของชนิดนั้น
+    :nth-of-type(n) = ลำดับที่ n ของชนิดเดียวกัน
+    :nth-last-of-type(n) = นับจากท้ายของชนิดเดียวกัน
+
+    Logical Pseudo Classes
+
+    :not(selector) = ยกเว้น Element ที่ตรง selector
+    :is(selector)  = เลือกหลาย selector พร้อมกัน
+    :where(selector) = คล้าย :is() แต่ specificity = 0
+    :has(selector) = เลือก Parent ที่มีลูกตรงตาม selector
+    -->
+
+    <a href="http://google.com" target="_blank">Google</a>
+
+    <ul>
+        <li>This is #1</li>
+        <li>This is #2</li>
+        <li>This is #3</li>
+        <li>This is #4</li>
+        <li>This is #5</li>
+        <li>This is #6</li>
+        <li>This is #7</li>
+        <li>This is #8</li>
+        <li>This is #9</li>
+    </ul>
+
+    <div id="greeting">Hover here
+        <p>Hello</p>
+    </div>
+
+</body>
+</html>
