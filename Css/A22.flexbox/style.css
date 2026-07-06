@@ -1,0 +1,290 @@
+.container{
+    border: 10px solid black;
+    height: 90vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.box{
+    font-size: 8em;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 70%);
+}
+
+#box2{
+    background-color: hsl(52, 100%, 70%);
+    order: -1;
+}
+
+#box3{
+    background-color: hsl(111, 100%, 70%);
+}
+
+#box4{
+    background-color: hsl(201, 100%, 70%);
+}
+
+/* ==========================
+       flex-direction
+========================== */
+/*
+    กำหนดทิศทางการเรียงของ Flex Items
+
+    ค่า:
+    row         = เรียงจากซ้าย → ขวา (ค่าเริ่มต้น)
+    row-reverse = เรียงจากขวา → ซ้าย
+    column      = เรียงจากบน → ล่าง
+    column-reverse = เรียงจากล่าง → บน
+
+    Main Axis
+    row            → แนวนอน
+    column         → แนวตั้ง
+
+    ตัวอย่าง
+
+    HTML: A B C D
+
+    row: A B C D
+
+    row-reverse: D C B A
+
+    column: A
+            B
+            C
+            D
+
+    column-reverse: D
+                    C
+                    B
+                    A
+    */
+
+/* ==========================
+       justify-content
+========================== */
+/*
+    จัดตำแหน่งของ Items ตาม Main Axis
+    Main Axis คือทิศทางที่กำหนดโดย flex-direction
+
+    ค่า:
+
+    flex-start = ชิดด้านเริ่มต้น
+
+    flex-end = ชิดด้านท้าย
+
+    center = อยู่ตรงกลาง
+
+    space-between = ตัวแรกชิดต้นตัวสุดท้ายชิดท้าย
+                    ช่องว่างระหว่าง Item เท่ากัน
+
+    space-around = ทุก Item มีพื้นที่รอบตัวเอง
+                   ช่องว่างริมซ้าย-ขวาจะเหลือครึ่งหนึ่ง
+
+    space-evenly = ทุกช่องว่างเท่ากันทั้งหมด
+
+    ตัวอย่าง
+
+    flex-start
+    [A][B][C]
+
+    center
+         [A][B][C]
+
+    flex-end
+                   [A][B][C]
+
+    space-between
+        [A]      [B]      [C]
+
+    space-around
+          [A]    [B]    [C]
+
+    space-evenly
+    |  A  |  B  |  C  |
+*/
+
+/* ==========================
+       align-items
+========================== */
+/*
+    จัดตำแหน่งของ Items ตาม Cross Axis
+    Cross Axis คือแกนที่ตั้งฉากกับ Main Axis
+
+    ถ้า flex-direction: row
+    Main Axis = แนวนอน
+    Cross Axis = แนวตั้ง
+
+    ถ้า flex-direction: column
+    Main Axis = แนวตั้ง
+    Cross Axis = แนวนอน
+
+    ค่า
+
+    stretch = ยืด Item ให้เต็ม Cross Axis (ค่าเริ่มต้น)
+
+    flex-start = ชิดด้านบน หรือด้านซ้ายตาม Cross Axis
+
+    flex-end = ชิดด้านล่าง หรือด้านขวา
+
+    center = อยู่ตรงกลาง
+
+    baseline = จัดตามเส้นฐานของข้อความ
+*/
+
+/* ==========================
+       flex-wrap
+========================== */
+/*
+    กำหนดว่า Items จะขึ้นบรรทัดใหม่หรือไม่
+
+    ค่า
+
+    nowrap = ไม่ขึ้นบรรทัดใหม่ Item จะถูกบีบให้เล็กลง (ค่าเริ่มต้น)
+
+    wrap = ขึ้นบรรทัดใหม่เมื่อพื้นที่ไม่พอ
+
+    wrap-reverse = ขึ้นบรรทัดใหม่แต่เรียงจากด้านล่างขึ้นบน
+*/
+
+/* ==========================
+       align-content
+========================== */
+/*
+    จัดตำแหน่ง "หลายแถว" ของ Flex Items
+
+    ใช้ได้เมื่อ
+
+    1. flex-wrap: wrap;
+    2. มีหลายแถวจริง
+
+    ถ้ามีแค่แถวเดียว align-content จะไม่ทำงาน
+
+    ค่า
+
+    flex-start = ทุกแถวชิดด้านบน
+
+    flex-end = ทุกแถวชิดด้านล่าง
+
+    center = ทุกแถวอยู่กลาง
+   
+    space-between = แถวแรกชิดบนแถวสุดท้ายชิดล่าง
+                    ช่องว่างระหว่างแถวเท่ากัน
+
+    space-around = เว้นระยะรอบแต่ละแถว
+
+    space-evenly = ช่องว่างทุกส่วนเท่ากัน
+
+    stretch = ยืดแต่ละแถวให้เต็มพื้นที่
+*/
+ /* ==========================
+       row-gap
+========================== */
+/*
+    ระยะห่างระหว่างแถว
+
+    ใช้เมื่อมีหลายแถว (flex-wrap: wrap)
+
+    เช่น
+
+        A  B  C
+
+        ← 1em →
+
+        D  E  F
+*/
+
+/* ==========================
+       column-gap
+========================== */
+/*
+    ระยะห่างระหว่างคอลัมน์ ใช้กำหนดช่องว่างเฉพาะแนวนอน
+
+    เช่น
+
+    [A] 1em [B] 1em [C]
+
+    ใช้แทน margin ได้ในหลายกรณี
+
+    สามารถเขียนย่อได้
+
+    gap: 1em; = row-gap: 1em;
+                column-gap: 1em;
+
+    gap: 10px 20px; = row-gap: 10px;
+                      column-gap: 20px;
+*/
+
+/*
+    กำหนดลำดับการแสดงผลของ Flex Item
+
+    ค่าเริ่มต้น
+
+    order: 0;
+
+    หลักการทำงาน
+
+      - ค่ายิ่งน้อย ยิ่งแสดงก่อน
+      - ค่ายิ่งมาก ยิ่งแสดงทีหลัง
+      - สามารถใช้เลขติดลบได้
+      - ถ้ามีค่า order เท่ากัน จะเรียงตามลำดับใน HTML
+
+    ตัวอย่าง
+
+    HTML
+
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+
+    ค่าเริ่มต้น
+
+    A(0) B(0) C(0)
+
+    ผลลัพธ์
+
+    A B C
+
+    ----------------------------
+
+    ถ้า
+
+    A { order: 0; }
+    B { order: -1; }
+    C { order: 0; }
+
+    ผลลัพธ์
+
+    B A C
+
+    เพราะ -1 น้อยกว่า 0
+
+    ----------------------------
+
+    ถ้า
+
+    A { order: 5; }
+    B { order: 2; }
+    C { order: 1; }
+
+    ผลลัพธ์
+
+    C B A
+
+    เพราะ
+
+    1 < 2 < 5
+
+----------------------------
+*/
