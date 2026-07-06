@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+        transform = คุณสมบัติ (Property) ของ CSS
+                ใช้ในการแปลง (Transform) องค์ประกอบ (Element)
+                เช่น หมุน (rotate),
+                ย่อ/ขยาย (scale),
+                เอียง (skew),
+                หรือย้ายตำแหน่ง (translate)
+
+    Syntax:
+    transform: function(value);
+
+    ฟังก์ชันที่ใช้บ่อย
+
+    rotate(angle) = หมุน Element ตามมุมที่กำหนด เช่น rotate(45deg)
+
+    scale(x, y) = ย่อหรือขยายขนาดของ Element เช่น scale(2) = ขยายเป็น 2 เท่า
+
+    scale(0.5) = ย่อเหลือครึ่งหนึ่ง
+
+    translate(x, y) = ย้ายตำแหน่งของ Element โดยไม่กระทบ Layout เดิม
+
+    translateX(100px) = เลื่อนไปทางขวา 100px
+
+    translateY(50px) = เลื่อนลง 50px
+
+    translate(100px, 50px) = ขวา 100px และลง 50px
+
+    skew(angle) = เอียง Element
+
+    skewX(30deg) = เอียงตามแกน X
+
+    skewY(20deg) = เอียงตามแกน Y
+
+    สามารถใช้หลายฟังก์ชันร่วมกันได้
+
+    transform: translateX(100px) rotate(45deg) scale(1.5);
+
+    หมายเหตุ:
+    - transform ไม่ทำให้ Element อื่นขยับตาม
+    - จุดอ้างอิงในการแปลงคือกึ่งกลางของ Element
+      (สามารถเปลี่ยนได้ด้วย transform-origin)
+    
+    -->
+
+    <div id="box1">Hi</div>
+
+
+    
+</body>
+</html>
